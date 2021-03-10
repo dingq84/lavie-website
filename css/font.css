@@ -1,6 +1,27 @@
 @font-face {
-	font-family: 'GenYoMinTW-Bold';
+	font-family: 'GenYoMinTW';
 	src: url('../font/genYoMin/GenYoMinTW-Bold.ttf');
 	font-weight: bold;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'GenYoMinTW';
+	src: url('../font/genYoMin/GenYoMinTW-Medium.ttf');
+	font-weight: 500;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'GenYoMinTW';
+	src: url('../font/genYoMin/GenYoMinTW-Regular.ttf');
+	font-weight: 400;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'AGaramondPro';
+	src: url('../font/Garamond/AGaramondPro-Regular_0.otf');
+	font-weight: 400;
 	font-display: swap;
 }

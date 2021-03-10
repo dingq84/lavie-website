@@ -2,78 +2,413 @@
 	margin: 0;
 	padding: 0;
 	list-style: none;
+	box-sizing: border-box;
 }
 
 section {
 	width: 100vw;
+	padding: 2% 10%;
 }
 
 h2 {
-	font-family: 'GenYoMinTW-Bold';
+	font-family: 'GenYoMinTW';
 	font-weight: bold;
+	font-size: 48px;
+	letter-spacing: 0.2;
+	transform: translateY(-50px);
+}
+
+h3 {
+	color: #fff;
+	font-size: 56px;
+	font-family: 'AGaramondPro';
+	font-weight: 400;
+	transform: translateY(-50px);
+}
+
+hr {
+	width: 100%;
+	border: none;
+	height: 0.3px;
+	background-color: #fff;
+	transform: translateY(-50px);
 }
 
 .first {
 	background: #440d70;
-	height: 1313px;
+	height: 520px;
 }
 
 .second {
-	background: linear-gradient(10deg, #440d70 5%, #f3b4d2 5%, #f3b4d2 90%, #440d70 90%);
-	height: 1276px;
+	background: linear-gradient(6deg, #440d70 20%, #f3b4d2 20%, #f3b4d2 80%, #440d70 80%);
+	height: 700px;
 }
 
 .third {
 	background: #440d70;
-	height: 753px;
+	height: 180px;
+	color: #f3b4d2;
+}
+
+.third p {
+	margin: 10px 0;
+	font-family: 'genYoMin';
+	font-weight: 500;
+	font-size: 24px;
+	color: #f3b4d2;
+	transform: translateY(-50px);
+}
+
+.third small {
+	font-family: 'genYoMin';
+	font-weight: 500;
+	color: #fff;
+	transform: translateY(-50px);
+	display: inline-block;
 }
 
 .fourth {
-	background: linear-gradient(10deg, #440d70 7%, #ccc 7%, #ccc 90%, #440d70 90%);
-	height: 912px;
+	background: linear-gradient(6deg, #440d70 20%, transparent 20%, transparent 80%, #440d70 80%),
+		url('/images/electricity/robot.jpg');
+	background-position: right top, center center;
+	background-size: cover, auto 75%;
+	background-repeat: no-repeat, no-repeat;
+	height: 600px;
 }
 
 .fifth {
 	background: #440d70;
-	height: 1133px;
+	height: 520px;
+	color: #f3b4d2;
+}
+
+.fifth-detail {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	margin-top: 20px;
+	transform: translateY(-50px);
+}
+
+.fifth-detail-item {
+	display: flex;
+	margin: 15px 0;
+}
+
+.fifth-detail-item:nth-child(even) {
+	align-self: flex-end;
+}
+
+.fifth-detail-item-number {
+	color: #440d70;
+	font-size: 36px;
+	width: 60px;
+	height: 60px;
+	border-radius: 50%;
+	background-color: #f3b4d2;
+	word-wrap: break-word;
+	line-height: 55px;
+	text-align: center;
+	flex-shrink: 0;
+	margin-right: 10px;
+	font-family: 'AGaramondPro';
+	font-weight: 400;
+}
+
+.fifth-detail-item-number small {
+	display: block;
+	font-size: 14px;
+	transform: translateY(-35px);
+}
+
+.fifth-detail-item-wrapper {
+	display: flex;
+	flex-direction: column;
+	max-width: 250px;
+	margin-top: 20px;
+}
+
+.fifth-detail-item-wrapper span {
+	color: #f3b4d2;
+	font-weight: bold;
+	font-family: 'genYoMin';
+	font-size: 18px;
+	margin-bottom: 5px;
+	display: inline-block;
+}
+
+.fifth-detail-item-wrapper small {
+	color: #fff;
 }
 
 .sixth {
-	background: linear-gradient(10deg, #f3b4d2 7%, #ccc 7%, #ccc 90%, #440d70 90%);
-	height: 912px;
+	background: linear-gradient(6deg, #f3b4d2 20%, transparent 20%, transparent 80%, #440d70 80%),
+		url('/images/function/a20.jpg');
+	background-position: right top, center center;
+	background-size: cover, auto 90%;
+	background-repeat: no-repeat, no-repeat;
+	height: 500px;
 }
 
 .seventh {
 	background: #f3b4d2;
-	height: 507px;
+	height: 150px;
+	color: #440d70;
+}
+
+.seventh p {
+	margin: 10px 0;
+	font-family: 'genYoMin';
+	font-weight: 500;
+	font-size: 24px;
+	color: #440d70;
+	transform: translateY(-50px);
+}
+
+.seventh small {
+	font-family: 'genYoMin';
+	font-weight: 500;
+	color: #440d70;
+	transform: translateY(-50px);
+	display: inline-block;
 }
 
 .eighth {
-	background: linear-gradient(10deg, #440d70 7%, #ccc 7%, #ccc 90%, #f3b4d2 90%);
-	height: 912px;
+	background: linear-gradient(6deg, #440d70 20%, transparent 20%, transparent 80%, #f3b4d2 80%),
+		url('/images/function/mrt.jpg');
+	background-position: right top, center center;
+	background-size: cover, auto 90%;
+	background-repeat: no-repeat, no-repeat;
+	height: 600px;
 }
 
 .ninth {
 	background: #440d70;
-	height: 570px;
+	height: 210px;
+	color: #f3b4d2;
+}
+
+.ninth p {
+	margin: 10px 0;
+	font-family: 'genYoMin';
+	font-weight: 500;
+	font-size: 24px;
+	color: #f3b4d2;
+	transform: translateY(-50px);
+}
+
+.ninth small {
+	font-family: 'genYoMin';
+	font-weight: 500;
+	color: #fff;
+	transform: translateY(-50px);
+	display: inline-block;
 }
 
 .tenth {
-	background: linear-gradient(10deg, #f3b4d2 7%, #ccc 7%, #ccc 90%, #440d70 90%);
-	height: 912px;
+	background: linear-gradient(6deg, #f3b4d2 20%, transparent 20%, transparent 80%, #440d70 80%),
+		url('/images/traffic/road.jpg');
+	height: 600px;
+	background-position: right top, center center;
+	background-size: cover, auto 90%;
+	background-repeat: no-repeat, no-repeat;
 }
 
 .eleventh {
 	background: #f3b4d2;
-	height: 1120px;
+	height: 500px;
+	color: #440d70;
+}
+
+.eleventh-detail {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	margin-top: 20px;
+	transform: translateY(-50px);
+}
+
+.eleventh-detail-item {
+	display: flex;
+	align-items: center;
+	margin: 15px 0;
+}
+
+.eleventh-detail-item:nth-child(even) {
+	align-self: flex-end;
+}
+
+.eleventh-detail-item:nth-child(2) {
+	margin-right: 10px;
+}
+
+.eleventh-detail-item-number {
+	color: #fff;
+	font-size: 48px;
+	width: 60px;
+	height: 60px;
+	border-radius: 50%;
+	background-color: #440d70;
+	line-height: 65px;
+	text-align: center;
+	flex-shrink: 0;
+	margin-right: 10px;
+	font-family: 'AGaramondPro';
+	font-weight: 400;
+}
+
+.eleventh-detail-item-wrapper {
+	display: flex;
+	flex-direction: column;
+	max-width: 220px;
+}
+
+.eleventh-detail-item-wrapper span:nth-child(1) {
+	color: #fff;
+	font-weight: bold;
+	font-family: 'genYoMin';
+	font-size: 18px;
+	margin-bottom: 5px;
+	display: inline-block;
+}
+
+.eleventh-detail-item-wrapper span:nth-child(2) {
+	color: #440d70;
+	font-size: 10px;
+}
+
+.eleventh-detail-item-wrapper small {
+	color: #440d70;
+	margin: 0 5px;
+	font-weight: 100;
 }
 
 .twelfth {
-	background: linear-gradient(10deg, #440d70 7%, #ccc 7%, #ccc 90%, #f3b4d2 90%);
-	height: 912px;
+	background: linear-gradient(6deg, #440d70 20%, transparent 20%, transparent 80%, #f3b4d2 80%),
+		url('/images/space/livingroom.jpg');
+	background-position: right top, center center;
+	background-size: cover, auto 90%;
+	background-repeat: no-repeat, no-repeat;
+	height: 600px;
 }
 
 .thirteenth {
 	background: #440d70;
-	height: 1630px;
+	height: 730px;
+	color: #f3b4d2;
+}
+
+.thirteenth form {
+	transform: translateY(-50px);
+	margin-top: 50px;
+}
+
+.thirteenth form label {
+	color: #fff;
+	font-family: 'GenYoMinTW';
+	font-size: 18px;
+	font-weight: bold;
+}
+
+.thirteenth form label[for='agree'] {
+	font-size: 12px;
+}
+
+.thirteenth form label span {
+	color: #f3b4d2;
+	font-family: inherit;
+	font-size: 14px;
+	font-weight: 400;
+}
+
+.thirteenth form label a {
+	color: #f3b4d2;
+	text-decoration: none;
+}
+
+.thirteenth form input {
+	display: block;
+	outline: none;
+	border: none;
+	border-radius: 10px;
+	width: 250px;
+	height: 35px;
+	margin: 10px 0 35px;
+	font-size: 16px;
+	padding: 2px 5px;
+}
+
+.thirteenth form .demand {
+	background-color: transparent;
+	border: 1px solid #fff;
+	margin-bottom: 15px;
+	color: #fff;
+}
+
+.thirteenth form input[type='submit'] {
+	background-color: #f93575;
+	color: #fff;
+	font-family: 'genYoMin';
+	font-weight: bold;
+}
+
+.thirteenth form input[type='checkbox'] {
+	display: inline-block;
+	width: auto;
+	min-width: auto;
+	height: auto;
+	margin-bottom: 15px;
+}
+
+.thirteenth footer {
+	margin-top: 120px;
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	height: 50px;
+	justify-content: center;
+}
+
+.thirteenth footer span {
+	color: #fff;
+	font-size: 10px;
+}
+
+.thirteenth footer .phone-number {
+	color: #fff67f;
+	font-size: 16px;
+	margin-right: 20px;
+	margin-left: 10px;
+	position: relative;
+}
+
+.thirteenth footer .phone-number::after {
+	content: '|';
+	position: absolute;
+	font-size: 12px;
+	color: #ccc;
+	top: 50%;
+	left: calc(100% + 10px);
+	transform: translateY(-50%);
+}
+
+@media only screen and (min-width: 768px) {
+	.fifth-detail-item-wrapper,
+	.eleventh-detail-item-wrapper {
+		max-width: 350px;
+	}
+
+	.fourth,
+	.sixth,
+	.eighth,
+	.tenth,
+	.twelfth {
+		background-size: cover, cover;
+		height: 912px;
+	}
+
+	.thirteenth form input {
+		min-width: 250px;
+		width: 100%;
+	}
 }
