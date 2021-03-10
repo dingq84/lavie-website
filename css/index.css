@@ -1,0 +1,79 @@
+* {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+section {
+	width: 100vw;
+}
+
+h2 {
+	font-family: 'GenYoMinTW-Bold';
+	font-weight: bold;
+}
+
+.first {
+	background: #440d70;
+	height: 1313px;
+}
+
+.second {
+	background: linear-gradient(10deg, #440d70 5%, #f3b4d2 5%, #f3b4d2 90%, #440d70 90%);
+	height: 1276px;
+}
+
+.third {
+	background: #440d70;
+	height: 753px;
+}
+
+.fourth {
+	background: linear-gradient(10deg, #440d70 7%, #ccc 7%, #ccc 90%, #440d70 90%);
+	height: 912px;
+}
+
+.fifth {
+	background: #440d70;
+	height: 1133px;
+}
+
+.sixth {
+	background: linear-gradient(10deg, #f3b4d2 7%, #ccc 7%, #ccc 90%, #440d70 90%);
+	height: 912px;
+}
+
+.seventh {
+	background: #f3b4d2;
+	height: 507px;
+}
+
+.eighth {
+	background: linear-gradient(10deg, #440d70 7%, #ccc 7%, #ccc 90%, #f3b4d2 90%);
+	height: 912px;
+}
+
+.ninth {
+	background: #440d70;
+	height: 570px;
+}
+
+.tenth {
+	background: linear-gradient(10deg, #f3b4d2 7%, #ccc 7%, #ccc 90%, #440d70 90%);
+	height: 912px;
+}
+
+.eleventh {
+	background: #f3b4d2;
+	height: 1120px;
+}
+
+.twelfth {
+	background: linear-gradient(10deg, #440d70 7%, #ccc 7%, #ccc 90%, #f3b4d2 90%);
+	height: 912px;
+}
+
+.thirteenth {
+	background: #440d70;
+	height: 1630px;
+}
