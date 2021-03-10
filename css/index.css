@@ -68,8 +68,14 @@ hr {
 }
 
 .fourth {
-	background: linear-gradient(6deg, #440d70 20%, transparent 20%, transparent 80%, #440d70 80%),
-		url('/images/electricity/robot.jpg');
+	background-image: linear-gradient(
+			6deg,
+			#440d70 20%,
+			transparent 20%,
+			transparent 80%,
+			#440d70 80%
+		),
+		url('/images/電能LaVie/情境示意圖.jpg');
 	background-position: right top, center center;
 	background-size: cover, auto 75%;
 	background-repeat: no-repeat, no-repeat;
@@ -142,8 +148,14 @@ hr {
 }
 
 .sixth {
-	background: linear-gradient(6deg, #f3b4d2 20%, transparent 20%, transparent 80%, #440d70 80%),
-		url('/images/function/a20.jpg');
+	background-image: linear-gradient(
+			6deg,
+			#f3b4d2 20%,
+			transparent 20%,
+			transparent 80%,
+			#440d70 80%
+		),
+		url('/images/娛樂LaVie/A19站實景.jpg');
 	background-position: right top, center center;
 	background-size: cover, auto 90%;
 	background-repeat: no-repeat, no-repeat;
@@ -174,8 +186,14 @@ hr {
 }
 
 .eighth {
-	background: linear-gradient(6deg, #440d70 20%, transparent 20%, transparent 80%, #f3b4d2 80%),
-		url('/images/function/mrt.jpg');
+	background-image: linear-gradient(
+			6deg,
+			#440d70 20%,
+			transparent 20%,
+			transparent 80%,
+			#f3b4d2 80%
+		),
+		url('/images/機能LaVie/捷運站示意圖.jpg');
 	background-position: right top, center center;
 	background-size: cover, auto 90%;
 	background-repeat: no-repeat, no-repeat;
@@ -206,8 +224,14 @@ hr {
 }
 
 .tenth {
-	background: linear-gradient(6deg, #f3b4d2 20%, transparent 20%, transparent 80%, #440d70 80%),
-		url('/images/traffic/road.jpg');
+	background-image: linear-gradient(
+			6deg,
+			#f3b4d2 20%,
+			transparent 20%,
+			transparent 80%,
+			#440d70 80%
+		),
+		url('/images/未來LaVie/交流道示意圖.jpg');
 	height: 600px;
 	background-position: right top, center center;
 	background-size: cover, auto 90%;
@@ -284,8 +308,14 @@ hr {
 }
 
 .twelfth {
-	background: linear-gradient(6deg, #440d70 20%, transparent 20%, transparent 80%, #f3b4d2 80%),
-		url('/images/space/livingroom.jpg');
+	background-image: linear-gradient(
+			6deg,
+			#440d70 20%,
+			transparent 20%,
+			transparent 80%,
+			#f3b4d2 80%
+		),
+		url('/images/格局LaVie/大廳3D示意圖.jpg');
 	background-position: right top, center center;
 	background-size: cover, auto 90%;
 	background-repeat: no-repeat, no-repeat;
