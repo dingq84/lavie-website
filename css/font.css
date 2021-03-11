@@ -25,3 +25,10 @@
 	font-weight: 400;
 	font-display: swap;
 }
+
+@font-face {
+	font-family: 'CenturyGothic';
+	src: url('../font/centurygothic/GOTHICB.TTF');
+	font-weight: bold;
+	font-display: swap;
+}

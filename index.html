@@ -12,10 +12,26 @@
 
 <body>
   <section class='first'>
-
+    <img src='/images/logo.png' alt='laVie logo' class='first-logo' />
+    <span class='first-title'>女皇級2+1房<small>|</small>稀有3+2房<small>|</small>氣勢登場</span>
+    <div class='first-content'>
+      <span>未來我來定</span>
+      <div class='first-content-border'>
+        <span>A19/A20</span>
+        <small>中壢SOGO生活圈</small>
+      </div>
+      <span>房價不恐懼</span>
+    </div>
+    <img src='/images/pic0.png' alt='laVie logo' class='first-woman' />
   </section>
-  <section class='second'>
 
+  <section class='second'>
+    <img src='/images/pic1.png' alt='laVie logo' class='second-neck' />
+
+    <h2>核心</h2>
+    <h3>LaVie</h3>
+    <hr />
+    <span>鑽石價值<small></small>稀世永傳</span>
   </section>
   <section class='third'>
     <h2>電能</h2>
@@ -205,6 +221,33 @@
         document.querySelector('.twelfth').style.backgroundImage = spaceBackground
       }
     }, 3000)
+  </script>
+
+  <script>
+    function calculateTriangleSize() {
+      const width = window.innerWidth
+      const height = Math.round(width * 0.178)
+
+      return { width, height }
+    }
+
+    window.addEventListener('resize', () => {
+      const first = document.querySelector('.first')
+      const { width, height } = calculateTriangleSize()
+      const bias = width > 390 ? 40 : 33
+      first.querySelector('.first-woman').style.bottom = `-${height / 2 + bias}px`
+      first.style.setProperty('--triangle-width', `${width}px`);
+      first.style.setProperty('--triangle-height', `${height}px`);
+    })
+
+    window.addEventListener('load', () => {
+      const first = document.querySelector('.first')
+      const { width, height } = calculateTriangleSize()
+      const bias = width > 390 ? 40 : 33
+      first.querySelector('.first-woman').style.bottom = `-${height / 2 + bias}px`
+      first.style.setProperty('--triangle-width', `${width}px`);
+      first.style.setProperty('--triangle-height', `${height}px`);
+    })
   </script>
 </body>
 
