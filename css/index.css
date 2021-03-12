@@ -20,7 +20,7 @@ h2 {
 	font-weight: bold;
 	font-size: 48px;
 	letter-spacing: 3px;
-	transform: translateY(-50px);
+	/* transform: translateY(-50px); */
 }
 
 h3 {
@@ -28,7 +28,7 @@ h3 {
 	font-size: 56px;
 	font-family: 'AGaramondPro';
 	font-weight: 400;
-	transform: translateY(-50px);
+	/* transform: translateY(-50px); */
 }
 
 hr {
@@ -36,7 +36,34 @@ hr {
 	border: none;
 	height: 1px;
 	background-color: #fff;
-	transform: translateY(-50px);
+	/* transform: translateY(-50px); */
+}
+
+.slick-dotted.slick-slider {
+	margin-bottom: 0 !important;
+}
+
+.slick-dots {
+	bottom: 50%;
+	transform: translateY(50%);
+	display: flex !important;
+	flex-direction: column;
+	right: 20px;
+	width: auto;
+}
+
+.slick-dots li button::before {
+	width: 12px;
+	height: 12px;
+	border: 1px solid #fff;
+	border-radius: 50%;
+	color: transparent;
+	opacity: 1;
+}
+
+.slick-dots li.slick-active button:before {
+	color: transparent;
+	background-color: #fff;
 }
 
 .first {
@@ -183,8 +210,23 @@ hr {
 
 .third {
 	background: #440d70;
-	height: 40px;
+	height: 150px;
 	color: #f3b4d2;
+	position: relative;
+}
+
+.third::after {
+	content: '';
+	position: absolute;
+	display: inline-block;
+	width: 0;
+	height: 0;
+	top: 100%;
+	left: 0;
+	border-style: solid;
+	z-index: 1;
+	border-width: var(--triangle-height) 0 0 var(--triangle-width);
+	border-color: #440d70 transparent transparent transparent;
 }
 
 .third p {
@@ -213,24 +255,42 @@ hr {
 }
 
 .fourth {
-	background-image: linear-gradient(
-			6deg,
-			#440d70 20%,
-			transparent 20%,
-			transparent 80%,
-			#440d70 80%
-		),
-		url('../images/電能LaVie/情境示意圖.jpg');
-	background-position: right top, center center;
-	background-size: cover, auto 75%;
-	background-repeat: no-repeat, no-repeat;
-	height: 600px;
+	padding: 0;
 }
 
 .fifth {
 	background: #440d70;
-	height: 520px;
+	height: 600px;
 	color: #f3b4d2;
+	position: relative;
+}
+
+.fifth::before {
+	content: '';
+	position: absolute;
+	display: inline-block;
+	width: 0;
+	height: 0;
+	bottom: 100%;
+	left: 0;
+	border-style: solid;
+	z-index: 1;
+	border-width: 0 var(--triangle-width) var(--triangle-height) 0;
+	border-color: transparent transparent #440d70 transparent;
+}
+
+.fifth::after {
+	content: '';
+	position: absolute;
+	display: inline-block;
+	width: 0;
+	height: 0;
+	top: 100%;
+	left: 0;
+	border-style: solid;
+	z-index: 1;
+	border-width: var(--triangle-height) 0 0 var(--triangle-width);
+	border-color: #440d70 transparent transparent transparent;
 }
 
 .fifth-detail {
@@ -238,7 +298,6 @@ hr {
 	display: flex;
 	flex-direction: column;
 	margin-top: 20px;
-	transform: translateY(-50px);
 }
 
 .fifth-detail-item {
@@ -293,24 +352,42 @@ hr {
 }
 
 .sixth {
-	background-image: linear-gradient(
-			6deg,
-			#f3b4d2 20%,
-			transparent 20%,
-			transparent 80%,
-			#440d70 80%
-		),
-		url('../images/娛樂LaVie/A19站實景.jpg');
-	background-position: right top, center center;
-	background-size: cover, auto 90%;
-	background-repeat: no-repeat, no-repeat;
-	height: 500px;
+	padding: 0;
 }
 
 .seventh {
 	background: #f3b4d2;
-	height: 150px;
+	height: 300px;
 	color: #440d70;
+	position: relative;
+}
+
+.seventh::before {
+	content: '';
+	position: absolute;
+	display: inline-block;
+	width: 0;
+	height: 0;
+	bottom: 100%;
+	left: 0;
+	border-style: solid;
+	z-index: 1;
+	border-width: 0 var(--triangle-width) var(--triangle-height) 0;
+	border-color: transparent transparent #f3b4d2 transparent;
+}
+
+.seventh::after {
+	content: '';
+	position: absolute;
+	display: inline-block;
+	width: 0;
+	height: 0;
+	top: 100%;
+	left: 0;
+	border-style: solid;
+	z-index: 1;
+	border-width: var(--triangle-height) 0 0 var(--triangle-width);
+	border-color: #f3b4d2 transparent transparent transparent;
 }
 
 .seventh p {
@@ -319,36 +396,52 @@ hr {
 	font-weight: 500;
 	font-size: 24px;
 	color: #440d70;
-	transform: translateY(-50px);
 }
 
 .seventh small {
 	font-family: 'genYoMin';
 	font-weight: 500;
 	color: #440d70;
-	transform: translateY(-50px);
 	display: inline-block;
 }
 
 .eighth {
-	background-image: linear-gradient(
-			6deg,
-			#440d70 20%,
-			transparent 20%,
-			transparent 80%,
-			#f3b4d2 80%
-		),
-		url('../images/機能LaVie/捷運站示意圖.jpg');
-	background-position: right top, center center;
-	background-size: cover, auto 90%;
-	background-repeat: no-repeat, no-repeat;
-	height: 600px;
+	padding: 0;
 }
 
 .ninth {
 	background: #440d70;
-	height: 210px;
+	height: 300px;
 	color: #f3b4d2;
+	position: relative;
+}
+
+.ninth::before {
+	content: '';
+	position: absolute;
+	display: inline-block;
+	width: 0;
+	height: 0;
+	bottom: 100%;
+	left: 0;
+	border-style: solid;
+	z-index: 1;
+	border-width: 0 var(--triangle-width) var(--triangle-height) 0;
+	border-color: transparent transparent #440d70 transparent;
+}
+
+.ninth::after {
+	content: '';
+	position: absolute;
+	display: inline-block;
+	width: 0;
+	height: 0;
+	top: 100%;
+	left: 0;
+	border-style: solid;
+	z-index: 1;
+	border-width: var(--triangle-height) 0 0 var(--triangle-width);
+	border-color: #440d70 transparent transparent transparent;
 }
 
 .ninth p {
@@ -357,36 +450,53 @@ hr {
 	font-weight: 500;
 	font-size: 24px;
 	color: #f3b4d2;
-	transform: translateY(-50px);
 }
 
 .ninth small {
 	font-family: 'genYoMin';
 	font-weight: 500;
 	color: #fff;
-	transform: translateY(-50px);
+
 	display: inline-block;
 }
 
 .tenth {
-	background-image: linear-gradient(
-			6deg,
-			#f3b4d2 20%,
-			transparent 20%,
-			transparent 80%,
-			#440d70 80%
-		),
-		url('../images/未來LaVie/交流道示意圖.jpg');
-	height: 600px;
-	background-position: right top, center center;
-	background-size: cover, auto 90%;
-	background-repeat: no-repeat, no-repeat;
+	padding: 0;
 }
 
 .eleventh {
 	background: #f3b4d2;
-	height: 500px;
+	height: 620px;
 	color: #440d70;
+	position: relative;
+}
+
+.eleventh::before {
+	content: '';
+	position: absolute;
+	display: inline-block;
+	width: 0;
+	height: 0;
+	bottom: 100%;
+	left: 0;
+	border-style: solid;
+	z-index: 1;
+	border-width: 0 var(--triangle-width) var(--triangle-height) 0;
+	border-color: transparent transparent #f3b4d2 transparent;
+}
+
+.eleventh::after {
+	content: '';
+	position: absolute;
+	display: inline-block;
+	width: 0;
+	height: 0;
+	top: 100%;
+	left: 0;
+	border-style: solid;
+	z-index: 1;
+	border-width: var(--triangle-height) 0 0 var(--triangle-width);
+	border-color: #f3b4d2 transparent transparent transparent;
 }
 
 .eleventh-detail {
@@ -394,7 +504,6 @@ hr {
 	display: flex;
 	flex-direction: column;
 	margin-top: 20px;
-	transform: translateY(-50px);
 }
 
 .eleventh-detail-item {
@@ -453,28 +562,31 @@ hr {
 }
 
 .twelfth {
-	background-image: linear-gradient(
-			6deg,
-			#440d70 20%,
-			transparent 20%,
-			transparent 80%,
-			#f3b4d2 80%
-		),
-		url('../images/格局LaVie/大廳3D示意圖.jpg');
-	background-position: right top, center center;
-	background-size: cover, auto 90%;
-	background-repeat: no-repeat, no-repeat;
-	height: 600px;
+	padding: 0;
 }
 
 .thirteenth {
 	background: #440d70;
 	height: 730px;
 	color: #f3b4d2;
+	position: relative;
+}
+
+.thirteenth::before {
+	content: '';
+	position: absolute;
+	display: inline-block;
+	width: 0;
+	height: 0;
+	bottom: 100%;
+	left: 0;
+	border-style: solid;
+	z-index: 1;
+	border-width: 0 var(--triangle-width) var(--triangle-height) 0;
+	border-color: transparent transparent #440d70 transparent;
 }
 
 .thirteenth form {
-	transform: translateY(-50px);
 	margin-top: 50px;
 }
 

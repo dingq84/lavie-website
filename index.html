@@ -6,6 +6,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Lavie website</title>
+  <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+  <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
   <link rel="stylesheet" href="css/index.css">
   <link rel="stylesheet" href="css/font.css">
 </head>
@@ -40,7 +42,9 @@
     <p>未來AI智能，就由La Vie開始</p>
     <small>地下B1/B2停車場，預留220V 電動車充電插座<br />LaVie is future! for all mankind!</small>
   </section>
-  <section class='fourth'></section>
+  <section class='fourth'>
+    <img src="images/電能LaVie/情境示意圖.jpg" alt="electric">
+  </section>
   <section class='fifth'>
     <h2>娛樂</h2>
     <h3>LaVie</h3>
@@ -71,7 +75,15 @@
       </div>
     </div>
   </section>
-  <section class='sixth'></section>
+  <section class='sixth'>
+    <img src='images/娛樂LaVie/A19站實景.jpg' alt='entertain' />
+    <img src='images/娛樂LaVie/A20興南站實景.jpg' alt='entertain' />
+    <img src='images/娛樂LaVie/IKEA實景.jpg' alt='entertain' />
+    <img src='images/娛樂LaVie/中壢SOGO實景.JPG' alt='entertain' />
+    <img src='images/娛樂LaVie/桃園國際棒球場實景.jpg' alt='entertain' />
+    <img src='images/娛樂LaVie/華泰名品城實景.jpg' alt='entertain' />
+    <img src='images/娛樂LaVie/青塘園實景.jpg' alt='entertain' />
+  </section>
   <section class='seventh'>
     <h2>機能</h2>
     <h3>LaVie</h3>
@@ -80,7 +92,11 @@
     <small>捷運(藍線)A20站，前進捷運(紅線)台鐵地下化中壢總站，串接捷運(綠線)桃園站實現”桃園環狀生活圈“，滿足通勤/學生族群，便利路網無遠弗屆！
     </small>
   </section>
-  <section class='eighth'></section>
+  <section class='eighth'>
+    <img src='images/機能LaVie/A20興南站實景.jpg' alt='function' />
+    <img src='images/機能LaVie/中壢SOGO實景.JPG' alt='function' />
+    <img src='images/機能LaVie/捷運站示意圖.jpg' alt='function' />
+  </section>
   <section class='ninth'>
     <h2>未來</h2>
     <h3>LaVie</h3>
@@ -88,7 +104,9 @@
     <p>桃園環狀生活圈</p>
     <small>五揚中豐北交流道，串接南桃園發展重心。亞洲矽谷中心、桃園會展中心、、市立美術館......即將到位！ “南桃園”不僅是國門的第一站，更是台灣與全球接軌的重要樞紐，讓全球國際都無法抵擋!</small>
   </section>
-  <section class='tenth'></section>
+  <section class='tenth'>
+    <img src='images/未來LaVie/交流道示意圖.jpg' alt='future' />
+  </section>
   <section class='eleventh'>
     <h2>格局</h2>
     <h3>LaVie</h3>
@@ -127,7 +145,16 @@
       </div>
     </div>
   </section>
-  <section class='twelfth'></section>
+  <section class='twelfth'>
+    <img src='images/格局LaVie/健身房3D示意圖.jpg' alt='space' />
+    <img src='images/格局LaVie/兒童遊戲室3D示意圖.jpg' alt='space' />
+    <img src='images/格局LaVie/大廳3D示意圖-1.jpg' alt='space' />
+    <img src='images/格局LaVie/大廳3D示意圖.jpg' alt='space' />
+    <img src='images/格局LaVie/梯廳3D示意圖.jpg' alt='space' />
+    <img src='images/格局LaVie/舞蹈教室3D示意圖.jpg' alt='space' />
+    <img src='images/格局LaVie/迎賓車道3D示意圖.jpg' alt='space' />
+    <img src='images/格局LaVie/閱讀室3D示意圖.jpg' alt='space' />
+  </section>
   <section class='thirteenth'>
     <h2>預約</h2>
     <h3>LaVie</h3>
@@ -155,75 +182,32 @@
     </footer>
   </section>
 
-  <script>
-    const electricImages = ["情境示意圖.jpg"]
-    const entertainImages = ["A19站實景.jpg", "A20興南站實景.jpg", "青塘園實景.jpg", "中壢SOGO實景.JPG", "桃園國際棒球場實景.jpg", "華泰名品城實景.jpg", "IKEA實景.jpg"]
-    const functionImages = ["捷運站示意圖.jpg", "中壢SOGO實景.JPG", "A20興南站實景.jpg"]
-    const futureImages = ["交流道示意圖.jpg"]
-    const spaceImages = ["大廳3D示意圖-1.jpg", "大廳3D示意圖.jpg", "兒童遊戲室3D示意圖.jpg", "迎賓車道3D示意圖.jpg", "健身房3D示意圖.jpg", "梯廳3D示意圖.jpg", "舞蹈教室3D示意圖.jpg", "閱讀室3D示意圖.jpg"]
-    let electricIndex = 0
-    let entertainIndex = 0
-    let functionIndex = 0
-    let futureIndex = 0
-    let spaceIndex = 0
-    setInterval(() => {
-      if (electricImages.length > 1) {
-        if (electricIndex < electricImages.length - 1) {
-          electricIndex++
-        } else {
-          electricIndex = 0
-        }
-
-        const futureBackground = `linear-gradient(6deg, #440d70 20%, transparent 20%, transparent 80%, #440d70 80%), url(images/電能LaVie/${electricImages[electricIndex]})`
-        document.querySelector('.fourth').style.backgroundImage = futureBackground
-      }
-
-      if (entertainImages.length > 1) {
-        if (entertainIndex < entertainImages.length - 1) {
-          entertainIndex++
-        } else {
-          entertainIndex = 0
-        }
-
-        const futureBackground = `linear-gradient(6deg, #f3b4d2 20%, transparent 20%, transparent 80%, #440d70 80%), url(images/娛樂LaVie/${entertainImages[entertainIndex]})`
-        document.querySelector('.sixth').style.backgroundImage = futureBackground
-      }
-
-      if (functionImages.length > 1) {
-        if (functionIndex < functionImages.length - 1) {
-          functionIndex++
-        } else {
-          functionIndex = 0
-        }
-
-        const futureBackground = `linear-gradient(6deg, #440d70 20%, transparent 20%, transparent 80%, #f3b4d2 80%), url(images/機能LaVie/${functionImages[functionIndex]})`
-        document.querySelector('.eighth').style.backgroundImage = futureBackground
-      }
-
-      if (futureImages.length > 1) {
-        if (futureIndex < futureImages.length - 1) {
-          futureIndex++
-        } else {
-          futureIndex = 0
-        }
-
-        const futureBackground = `linear-gradient(6deg, #f3b4d2 20%, transparent 20%, transparent 80%, #440d70 80%), url(images/未來LaVie/${futureImages[futureIndex]})`
-        document.querySelector('.tenth').style.backgroundImage = futureBackground
-      }
-
-      if (spaceImages.length > 1) {
-        if (spaceIndex < spaceImages.length - 1) {
-          spaceIndex++
-        } else {
-          spaceIndex = 0
-        }
-        const spaceBackground = `linear-gradient(6deg, #440d70 20%, transparent 20%, transparent 80%, #f3b4d2 80%), url(images/格局LaVie/${spaceImages[spaceIndex]})`
-        document.querySelector('.twelfth').style.backgroundImage = spaceBackground
-      }
-    }, 3000)
-  </script>
+  <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script type="text/javascript" src="slick/slick.min.js"></script>
 
   <script>
+    const setting = {
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      // autoplay: true,
+      autoplaySpeed: 2000,
+      arrows: false,
+      dots: true,
+      draggable: false,
+      mobileFirst: true,
+      swipe: false,
+      adaptiveHeight: true
+    }
+
+    $(document).ready(function () {
+      $('.fourth').slick(setting);
+      $('.sixth').slick(setting);
+      $('.eighth').slick(setting);
+      $('.tenth').slick(setting);
+      $('.twelfth').slick(setting);
+    });
+
     function calculateTriangleSize() {
       const width = window.innerWidth
       const height = Math.round(width * 0.178)
@@ -231,23 +215,43 @@
       return { width, height }
     }
 
-    window.addEventListener('resize', () => {
+    function updateTriangle() {
       const first = document.querySelector('.first')
+      const third = document.querySelector('.third')
+      const fifth = document.querySelector('.fifth')
+      const seventh = document.querySelector('.seventh')
+      const ninth = document.querySelector('.ninth')
+      const eleventh = document.querySelector('.eleventh')
+      const thirteenth = document.querySelector('.thirteenth')
       const { width, height } = calculateTriangleSize()
-      const bias = width > 390 ? 40 : 33
-      first.querySelector('.first-woman').style.bottom = `-${height / 2 + bias}px`
-      first.style.setProperty('--triangle-width', `${width}px`);
-      first.style.setProperty('--triangle-height', `${height}px`);
-    })
 
-    window.addEventListener('load', () => {
-      const first = document.querySelector('.first')
-      const { width, height } = calculateTriangleSize()
-      const bias = width > 390 ? 40 : 33
-      first.querySelector('.first-woman').style.bottom = `-${height / 2 + bias}px`
       first.style.setProperty('--triangle-width', `${width}px`);
       first.style.setProperty('--triangle-height', `${height}px`);
-    })
+
+      third.style.setProperty('--triangle-width', `${width}px`);
+      third.style.setProperty('--triangle-height', `${height}px`);
+
+      fifth.style.setProperty('--triangle-width', `${width}px`);
+      fifth.style.setProperty('--triangle-height', `${height}px`);
+
+      seventh.style.setProperty('--triangle-width', `${width}px`);
+      seventh.style.setProperty('--triangle-height', `${height}px`);
+
+      ninth.style.setProperty('--triangle-width', `${width}px`);
+      ninth.style.setProperty('--triangle-height', `${height}px`);
+
+      eleventh.style.setProperty('--triangle-width', `${width}px`);
+      eleventh.style.setProperty('--triangle-height', `${height}px`);
+
+      thirteenth.style.setProperty('--triangle-width', `${width}px`);
+      thirteenth.style.setProperty('--triangle-height', `${height}px`);
+
+      const bias = width > 390 ? 40 : 33
+      document.querySelector('.first-woman').style.setProperty('bottom', `-${height / 2 + bias}px`)
+    }
+
+    $(window).on('resize', updateTriangle)
+    $(window).on('load', updateTriangle)
   </script>
 </body>
 
