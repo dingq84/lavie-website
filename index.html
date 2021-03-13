@@ -4,7 +4,9 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
   <title>Lavie website</title>
   <link rel="stylesheet" type="text/css" href="slick/slick.css" />
   <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
@@ -28,12 +30,24 @@
   </section>
 
   <section class='second'>
-    <img src='images/pic1.png' alt='laVie logo' class='second-neck' />
+    <img src='images/pic3.png' alt='necklace' class='second-necklace' />
 
     <h2>核心</h2>
     <h3>LaVie</h3>
     <hr />
     <span>鑽石價值<small></small>稀世永傳</span>
+    <div class='second-circle second-circle-1'>
+      <div>
+        <span>中壢核心</span>
+        <span>SOGO</span>
+      </div>
+    </div>
+    <div class='second-circle second-circle-2'>
+      <div>A20</div>
+    </div>
+    <div class='second-circle second-circle-3'>
+      <div>A21</div>
+    </div>
   </section>
   <section class='third'>
     <h2>電能</h2>
@@ -187,6 +201,7 @@
   <script type="text/javascript" src="slick/slick.min.js"></script>
 
   <script>
+    const triangleAngle = 0.17
     const setting = {
       slidesToShow: 1,
       slidesToScroll: 1,
@@ -210,7 +225,7 @@
 
     function calculateTriangleSize() {
       const width = window.innerWidth
-      const height = Math.round(width * 0.178)
+      const height = Math.round(width * triangleAngle)
 
       return { width, height }
     }
@@ -246,8 +261,38 @@
       thirteenth.style.setProperty('--triangle-width', `${width}px`);
       thirteenth.style.setProperty('--triangle-height', `${height}px`);
 
-      const bias = width > 390 ? 40 : 33
-      document.querySelector('.first-woman').style.setProperty('bottom', `-${height / 2 + bias}px`)
+
+      const image = document.querySelector('.first-woman')
+      // 圖片下方的白色高度，約為圖片高的5%
+      const { height: imageHeight, top } = image.getBoundingClientRect()
+      const bias = Math.round(imageHeight * 0.052)
+      const bottom = height / 2 + bias
+      image.style.setProperty('bottom', `-${bottom}px`)
+      const logo = document.querySelector('.first-logo')
+      first.style.height = `${165 + logo.offsetHeight + imageHeight - bottom}px`
+
+      document.querySelector('.first-content-border').style.height = `calc(100% + ${bottom / 0.6}px)`
+
+      const necklace = document.querySelector('.second-necklace')
+      const { offsetWidth, offsetHeight } = necklace
+      const necklaceTop = height - offsetWidth * 0.55 * triangleAngle
+      necklace.style.top = `${necklaceTop}px`
+      const circle1 = document.querySelector('.second-circle-1')
+
+      circle1.style.top = `${Math.round(necklaceTop * 0.9 + offsetHeight)}px`
+      circle1.style.right = `${Math.round(offsetWidth * 0.63)}px`
+      circle1.style.setProperty('--circle1-width', `${Math.round(offsetWidth * 0.63 * 0.3) + circle1.offsetWidth / 2}px`)
+
+      const circle2 = document.querySelector('.second-circle-2')
+      circle2.style.top = `${Math.round(necklaceTop + offsetHeight * 0.17)}px`
+      circle2.style.right = `${offsetWidth * 0.15}px`
+      circle2.style.setProperty('--circle2-width', `${Math.round(offsetWidth * 0.36 - offsetWidth * 0.15 - 50)}px`)
+      circle2.style.setProperty('--circle2-height', `${Math.round(offsetHeight * 0.46 - 50)}px`)
+
+      const circle3 = document.querySelector('.second-circle-3')
+      circle3.style.setProperty('--circle3-width', `${Math.round(offsetWidth * 0.37 - offsetWidth * 0.1 - circle3.offsetWidth)}px`)
+      circle3.style.right = `${offsetWidth * 0.1}px`
+      circle3.style.top = `${necklaceTop + offsetHeight * 0.67}px`
     }
 
     $(window).on('resize', updateTriangle)
