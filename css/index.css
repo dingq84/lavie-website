@@ -68,6 +68,10 @@ hr {
 	background-color: #fff;
 }
 
+.modal strong {
+	font-size: 36px;
+}
+
 .first {
 	background: #440d70;
 	height: 65vh;
@@ -760,7 +764,6 @@ hr {
 
 .thirteenth form label a {
 	color: #f3b4d2;
-	text-decoration: none;
 }
 
 .thirteenth form input {
