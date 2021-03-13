@@ -1,5 +1,5 @@
 :root {
-	--triangle-width: 100%;
+	--triangle-width: 100vw;
 	--triangle-height: 150px;
 	--circle1-width: 10px;
 	--circle2-width: 100px;
@@ -140,6 +140,8 @@ hr {
 	width: 100%;
 	justify-content: center;
 	align-items: center;
+	font-family: 'GenYoGothicTW';
+	font-weight: 500;
 }
 
 .first-title small {
@@ -170,7 +172,6 @@ hr {
 	z-index: 2;
 	flex-grow: 1;
 	height: 100%;
-	/* height: calc(100% + var(--triangle-height)); */
 }
 
 .first-content-border > span {
@@ -194,7 +195,7 @@ hr {
 
 .second {
 	background: #f3b4d2;
-	height: 70vh;
+	height: 65vh;
 	position: relative;
 	color: #440d70;
 }
@@ -248,7 +249,7 @@ hr {
 	height: 120px;
 	transform: translateY(-50%);
 	line-height: 122px;
-	top: 0;
+	top: 100%;
 	right: 0;
 }
 
@@ -520,6 +521,8 @@ hr {
 
 .fifth-detail-item-wrapper small {
 	color: #fff;
+	font-family: 'GenYoGothicTW';
+	font-weight: 500;
 }
 
 .sixth {
@@ -724,6 +727,8 @@ hr {
 .eleventh-detail-item-wrapper span:nth-child(2) {
 	color: #440d70;
 	font-size: 10px;
+	font-family: 'GenYoGothicTW';
+	font-weight: 500;
 }
 
 .eleventh-detail-item-wrapper small {
