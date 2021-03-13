@@ -32,10 +32,11 @@
     <p>(三) 期間：包括個人資料蒐集目的之存續期間、依相關法令或契約約定之保存期限、或本公司因執行業務所必須之保存期間。</p>
     <p>(四) 方式：以自動化機器或其他非自動化之利用方式，包括但不限於以書面、電話、簡訊、傳真、電子郵件、網際網路、紙本或其他基於蒐集目的且合於當時科學技術之適當方式，對您提供的個人資料進行蒐集、處理及利用。</p>
 
-    <pppp>
+    <p>
       四、依據個人資料保護法第3條，您得就個人資料行使以下權利本公司對您的個人資料，將採行妥適安全之措施加以保護，並避免被不當使用。您可隨時透過本公司官方網站揭露之通訊方式，就您提供的個人資料行使下列權利：(1)請求查詢或閱覽；(2)製給複製本；(3)請求補充或更正；(4)請求停止蒐集、處理及利用；及(5)請求刪除。
-    </pppp>
+    </p>
 
+    <a href="#" rel="modal:close" class='confirm'>確認</a>
   </div>
   <section class='first'>
     <img src='images/logo.png' alt='laVie logo' class='first-logo' />
@@ -197,13 +198,13 @@
     <hr />
     <form name="sentMessage" id="contactForm" action="sendsee.php" method="post">
       <label for='name'>姓名<span>(必填)</span></label>
-      <input id='name' name='name' />
+      <input id='name' name='name' required />
       <label for='phone'>電話<span>(必填)</span></label>
-      <input id='phone' name='phone' />
+      <input id='phone' name='phone' required />
       <label for='demand'>產品需求</label>
       <input id='demand' name='demand' class='demand' />
 
-      <input id='agree' type='checkbox' />
+      <input id='agree' type='checkbox' required />
       <label for='agree'>
         按送出即同意
         <a href="#ex1" rel="modal:open">個資運用聲明</a>

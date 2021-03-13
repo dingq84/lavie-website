@@ -72,6 +72,23 @@ hr {
 	font-size: 36px;
 }
 
+.modal p {
+	margin-bottom: 5px;
+}
+
+.modal .confirm {
+	display: block;
+	margin: 20px auto;
+	width: 150px;
+	height: 30px;
+	line-height: 30px;
+	background-color: #440d70;
+	color: #fff;
+	text-decoration: none;
+	border-radius: 20px;
+	text-align: center;
+}
+
 .first {
 	background: #440d70;
 	height: 65vh;
